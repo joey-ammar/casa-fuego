@@ -1,0 +1,76 @@
+.landing__btn {
+  margin: 5rem 0rem;
+  &--left {
+    color: $color__white;
+    border: 2px solid $color__white;
+    background: transparent;
+    font-family: popBold;
+    padding: 1rem 2rem;
+    font-size: 1.8rem;
+  }
+  &--right {
+    color: $color__white;
+    border: 2px solid $color__gold;
+    background: $color__gold;
+    font-family: popBold;
+    padding: 1rem 2rem;
+    font-size: 1.8rem;
+    margin-left: 1rem;
+  }
+}
+//contact
+.btn1,
+.btn2,
+.btn3 {
+  background-color: $color__gold;
+  border: transparent;
+  color: $color__white;
+  padding: 1rem 2rem;
+  font-family: popBold;
+  font-size: 1.6rem;
+  margin: 2rem 0rem;
+  cursor: pointer;
+}
+.btn3 {
+  width: 70%;
+  margin: 1rem auto 3rem;
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px),
+  only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2),
+  only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2),
+  only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2),
+  only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2),
+  only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3),
+  only screen and (min-device-width: 414px) and (max-device-height: 896px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3),
+  only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2),
+  only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3),
+  only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3) {
+  .landing__btn {
+    margin: 2rem 0rem;
+    &--left {
+      font-size: 1.2rem;
+    }
+    &--right {
+      color: $color__white;
+      font-size: 1.2rem;
+    }
+  }
+  //contact
+  .btn1,
+  .btn2,
+  .btn3 {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .landing__btn {
+    margin: 2rem 0rem;
+    &--left {
+      font-size: 1.2rem;
+    }
+    &--right {
+      color: $color__white;
+      font-size: 1.2rem;
+    }
+  }
+}

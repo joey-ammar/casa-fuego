@@ -1,0 +1,206 @@
+// Home page header
+header {
+  background-image: url("../../images/bg.jpg");
+  background-color: rgba($color: $color__black, $alpha: 0.5);
+  background-blend-mode: multiply;
+  @include bg-cover;
+  height: 90vh;
+}
+.landing__header {
+  height: 90vh;
+  @include flex-column-center;
+  h1 {
+    color: $color__white;
+    font-size: 7rem;
+  }
+  p {
+    color: $color__grey;
+    font-size: 2.6rem;
+    width: 70%;
+    margin: 1rem 0rem;
+  }
+}
+
+// Gallery page header
+
+.header__gallery {
+  background-image: url("../../images/bg1.jpg");
+  background-color: rgba($color: $color__black, $alpha: 0.8);
+  background-blend-mode: multiply;
+  @include bg-cover;
+  height: 60vh;
+}
+.landing__header__gallery {
+  height: 60vh;
+  @include flex-column-center;
+  h1 {
+    color: $color__white;
+    font-size: 7rem;
+  }
+  p {
+    color: $color__grey;
+    font-size: 2.6rem;
+    width: 70%;
+    margin: 1rem 0rem;
+  }
+}
+
+// shop page header
+
+//shop
+.header__shop {
+  background-image: url("../../images/bg2.jpg");
+  background-color: rgba($color: $color__black, $alpha: 0.8);
+  background-blend-mode: multiply;
+  @include bg-cover;
+  height: 60vh;
+}
+.landing__header__gallery {
+  height: 60vh;
+  @include flex-column-center;
+  h1 {
+    color: $color__white;
+    font-size: 7rem;
+  }
+  p {
+    color: $color__grey;
+    font-size: 2.6rem;
+    width: 70%;
+    margin: 1rem 0rem;
+  }
+}
+// Blog
+.header__blog {
+  background-image: url("../../images/bg4.jpg");
+  background-color: rgba($color: $color__black, $alpha: 0.8);
+  background-blend-mode: multiply;
+  @include bg-cover;
+  height: 60vh;
+}
+.landing__header__gallery {
+  height: 60vh;
+  @include flex-column-center;
+  h1 {
+    color: $color__white;
+    font-size: 7rem;
+  }
+  p {
+    color: $color__grey;
+    font-size: 2.6rem;
+    width: 70%;
+    margin: 1rem 0rem;
+  }
+}
+//about
+
+.header__about {
+  background-image: url("../../images/bg5.jpg");
+  background-color: rgba($color: $color__black, $alpha: 0.8);
+  background-blend-mode: multiply;
+  @include bg-cover;
+  height: 60vh;
+}
+.landing__header__gallery {
+  height: 60vh;
+  @include flex-column-center;
+  h1 {
+    color: $color__white;
+    font-size: 7rem;
+  }
+  p {
+    color: $color__grey;
+    font-size: 2.6rem;
+    width: 70%;
+    margin: 1rem 0rem;
+  }
+}
+//contact
+.header__contact {
+  background-image: url("../../images/bg6.jpg");
+  background-color: rgba($color: $color__black, $alpha: 0.8);
+  background-blend-mode: multiply;
+  @include bg-cover;
+  height: 60vh;
+}
+.landing__header__gallery {
+  height: 60vh;
+  @include flex-column-center;
+  h1 {
+    color: $color__white;
+    font-size: 7rem;
+  }
+  p {
+    color: $color__grey;
+    font-size: 2.6rem;
+    width: 70%;
+    margin: 1rem 0rem;
+  }
+}
+
+//Blog page header
+
+//Media Queries
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px),
+  only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2),
+  only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2),
+  only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2),
+  only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2),
+  only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3),
+  only screen and (min-device-width: 414px) and (max-device-height: 896px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3),
+  only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2),
+  only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3),
+  only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3) {
+  header,
+  .header__gallery {
+    height: 56vh;
+  }
+  .landing__header {
+    height: 56vh;
+    h1 {
+      font-size: 3rem;
+    }
+    p {
+      font-size: 1.5rem;
+      width: 100%;
+    }
+  }
+  .landing__header__gallery {
+    height: 56vh;
+    @include flex-column-center;
+    text-align: center;
+    h1 {
+      font-size: 3rem;
+    }
+    p {
+      font-size: 2rem;
+    }
+  }
+}
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  header,
+  .header__gallery {
+    height: 56vh;
+  }
+  .landing__header {
+    height: 56vh;
+    h1 {
+      font-size: 6rem;
+    }
+    p {
+      font-size: 2rem;
+      width: 85%;
+    }
+  }
+  .landing__header__gallery {
+    height: 56vh;
+    @include flex-column-center;
+    text-align: center;
+    h1 {
+      font-size: 4rem;
+    }
+    p {
+      font-size: 2.5rem;
+      line-height: 3rem;
+    }
+  }
+}

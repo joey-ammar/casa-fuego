@@ -1,0 +1,280 @@
+// Awards
+.awards {
+  @include full-width-height-vh;
+  background-color: $color_bg_dark;
+  &__inside {
+    height: 120vh;
+    @include flex-column-center;
+    h2 {
+      color: $color__grey;
+      font-size: 2rem;
+      font-family: popMedium;
+    }
+    h3 {
+      font-size: 2rem;
+      color: $color__gold;
+      padding: 1rem 0rem;
+    }
+    h1 {
+      color: $color__white;
+      font-size: 5rem;
+      padding-bottom: 2rem;
+    }
+    p {
+      color: $color__gray__innovation;
+      font-size: 2.4rem;
+    }
+    .recognitions {
+      display: flex;
+      flex-direction: row;
+      div {
+        margin: 3rem 5rem 3rem 5rem;
+        h4 {
+          color: $color__gold;
+          font-size: 5rem;
+          text-align: center;
+        }
+        small {
+          color: $color__white;
+          font-size: 2rem;
+          font-family: popRegular;
+        }
+      }
+    }
+  }
+}
+//background video
+.bgVideo {
+  @include full-width-height-vh-100;
+  position: relative;
+  @include flex-center;
+  color: #fff;
+  text-align: center;
+  h1 {
+    color: white;
+    font-size: 10rem;
+  }
+}
+.fullscreen-bg {
+  @include position-absolute;
+  @include full-width-height-vh-100;
+  overflow: hidden;
+  z-index: -100;
+  video {
+    min-width: 100%;
+    min-height: 100%;
+  }
+}
+.video_overlay {
+  height: 100vh;
+  width: 100%;
+  @include position-absolute;
+  background-color: $color__black;
+  z-index: 1;
+  opacity: 0.5;
+}
+.content_overlay {
+  z-index: 3;
+}
+//  offers
+
+.offer {
+  @include full-width-height;
+  &__inside {
+    padding: 10rem 0rem;
+    &--top {
+      text-align: center;
+      h2 {
+        color: $color__grey;
+        font-size: 2rem;
+        font-family: popMedium;
+      }
+      h3 {
+        font-size: 2rem;
+        color: $color__gold;
+        padding: 1rem 0rem;
+      }
+      h1 {
+        color: $color__black;
+        font-size: 6rem;
+        padding-bottom: 5rem;
+      }
+    }
+    &--bottom {
+      width: 100%;
+      @include flex-center;
+      .icons-arrange {
+        text-align: center;
+        padding: 0rem 3rem;
+        i {
+          font-size: 5rem;
+          color: $color__gold;
+          padding: 1rem 0rem;
+        }
+        h1 {
+          font-family: popMedium;
+          font-size: 2rem;
+        }
+        p {
+          font-family: popLight;
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px),
+  only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2),
+  only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2),
+  only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2),
+  only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2),
+  only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3),
+  only screen and (min-device-width: 414px) and (max-device-height: 896px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3),
+  only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2),
+  only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3),
+  only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3) {
+  .awards {
+    height: 120vh;
+    &__inside {
+      height: 120vh;
+      @include flex-column-center;
+      text-align: center;
+      h2 {
+        font-size: 2rem;
+      }
+
+      h1 {
+        font-size: 2.7rem;
+      }
+      p {
+        color: $color__gray__innovation;
+        font-size: 1.6rem;
+        width: 80%;
+      }
+      .recognitions {
+        display: block;
+        div {
+          margin: 3rem 5rem 3rem 5rem;
+          h4 {
+            color: $color__gold;
+            font-size: 3rem;
+            text-align: center;
+          }
+          small {
+            color: $color__white;
+            font-size: 1.6rem;
+            font-family: popRegular;
+          }
+        }
+      }
+    }
+  }
+  //background video
+  .bgVideo {
+    height: 50vh;
+    h1 {
+      font-size: 3rem;
+    }
+  }
+  .fullscreen-bg {
+    height: 50vh;
+  }
+  .video_overlay {
+    height: 50vh;
+  }
+  //offer
+  .offer {
+    &__inside {
+      padding: 5rem 0rem;
+      &--top {
+        h2 {
+          font-size: 2rem;
+        }
+        h1 {
+          font-size: 3rem;
+        }
+      }
+      &--bottom {
+        display: block;
+        .icons-arrange {
+          padding: 2rem 0rem;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .awards {
+    height: 80vh;
+    &__inside {
+      height: 80vh;
+      @include flex-column-center;
+      text-align: center;
+      h2 {
+        font-size: 2rem;
+      }
+
+      h1 {
+        font-size: 5rem;
+      }
+      p {
+        color: $color__gray__innovation;
+        font-size: 2rem;
+        width: 100%;
+      }
+      .recognitions {
+        display: block;
+        div {
+          margin: 3rem 5rem 3rem 5rem;
+          h4 {
+            color: $color__gold;
+            font-size: 5rem;
+            text-align: center;
+          }
+          small {
+            color: $color__white;
+            font-size: 2rem;
+            font-family: popRegular;
+          }
+        }
+      }
+    }
+  }
+  //background video
+  .bgVideo {
+    height: 50vh;
+    h1 {
+      font-size: 3rem;
+    }
+  }
+  .fullscreen-bg {
+    height: 50vh;
+  }
+  .video_overlay {
+    height: 50vh;
+  }
+  //offer
+  .offer {
+    &__inside {
+      padding: 5rem 0rem;
+      &--top {
+        h2 {
+          font-size: 2rem;
+        }
+        h1 {
+          font-size: 3rem;
+        }
+      }
+      &--bottom {
+        display: block;
+        .icons-arrange {
+          padding: 2rem 0rem;
+          p {
+            font-size: 1.7rem;
+          }
+        }
+      }
+    }
+  }
+}

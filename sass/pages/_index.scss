@@ -1,0 +1,482 @@
+//Welcome
+.welcome {
+  @include full-width-height;
+  margin: 10rem 0rem;
+  &__inside {
+    display: flex;
+    &--right {
+      margin: 5rem 0rem;
+      h2 {
+        color: $color__grey;
+        font-size: 3rem;
+        font-family: popRegular;
+      }
+      h3 {
+        font-size: 2rem;
+        color: $color__gold;
+      }
+      h1 {
+        font-size: 5rem;
+        padding: 3rem 0rem;
+        font-weight: 100;
+      }
+      p {
+        color: #9b9b9b;
+        font-family: popLight;
+        font-size: 1.8rem;
+        width: 100%;
+        padding: 2rem 0rem;
+      }
+      h4 {
+        font-family: popLight;
+        font-size: 1.7rem;
+        color: #111;
+      }
+      small {
+        color: $color__gold;
+        font-size: 1.4rem;
+        font-family: popRegular;
+      }
+    }
+  }
+}
+.container__welcome {
+  @include container__welcome;
+}
+//Innovation
+.innovation {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../../images/image2.jpg");
+  background-color: rgba($color: $color__black, $alpha: 0.7);
+  background-blend-mode: multiply;
+  @include bg-cover;
+  &__inside {
+    height: 100vh;
+    @include flex-column-center;
+    align-items: flex-start;
+    h2 {
+      color: $color__gray__innovation;
+      font-family: popRegular;
+      font-size: 2rem;
+    }
+    h3 {
+      color: $color__gold;
+    }
+    h1 {
+      color: $color__white;
+      font-size: 4rem;
+      font-weight: 100;
+      margin: 2rem 0rem;
+    }
+    p {
+      color: #939393;
+      width: 80%;
+      font-size: 1.5rem;
+      font-family: popLight;
+    }
+  }
+}
+//chefs
+.chefs {
+  background-color: #f7f7f7;
+  @include full-width-height;
+  padding: 5rem 0rem;
+  &__inside {
+    text-align: center;
+    &--top {
+      h2 {
+        color: $color__gray__innovation;
+        font-family: popRegular;
+        font-size: 2rem;
+        letter-spacing: 0.2rem;
+      }
+      h3 {
+        color: $color__gold;
+        font-size: 2rem;
+        padding-bottom: 2rem;
+      }
+      h1 {
+        font-size: 6rem;
+        font-weight: 100;
+      }
+      p {
+        color: $color__grey;
+        font-family: popLight;
+        font-size: 1.8rem;
+      }
+    }
+    .before__card {
+      @include grid;
+      width: 100%;
+      padding: 5rem 0rem;
+    }
+    .card {
+      height: 100%;
+      text-align: center;
+      &__image {
+        img {
+          width: 100%;
+          height: 100%;
+          margin-bottom: -4px;
+        }
+      }
+      &_text {
+        background-color: white;
+        padding-bottom: 3rem;
+        h1 {
+          font-family: popLight;
+          font-size: 2rem;
+          padding-top: 3rem;
+        }
+        h3 {
+          color: $color__grey;
+          font-family: popMedium;
+          padding-bottom: 3rem;
+        }
+        p {
+          font-family: popRegular;
+          font-size: 1.5rem;
+          color: $color__gray__innovation;
+        }
+      }
+    }
+    .container__chefs {
+      @include container__chefs;
+    }
+  }
+}
+//Contact
+.contact {
+  height: 150vh;
+  width: 100%;
+  background-image: url("../../images/image3.jpg");
+  background-color: rgba($color: $color__black, $alpha: 0.6);
+  background-blend-mode: multiply;
+  @include bg-cover;
+  text-align: center;
+  color: white;
+  &__inside {
+    display: flex;
+    flex-direction: row;
+    &--left,
+    &--right {
+      background-color: $color_bg_contact;
+      width: 40%;
+      margin: 10rem auto;
+    }
+    &--left {
+      h1 {
+        font-size: 3rem;
+        font-weight: 100;
+        padding: 3rem 0rem;
+      }
+      h2 {
+        font-family: popMedium;
+        font-size: 1.6rem;
+        padding-top: 2rem;
+      }
+      h3 {
+        font-size: 1.6rem;
+        font-family: popRegular;
+      }
+      h4 {
+        border-bottom: 2px solid $color__gold;
+        padding: 1rem 0rem;
+        width: 70%;
+        margin: 0 auto;
+      }
+    }
+    &--right {
+      h1 {
+        font-size: 3rem;
+        font-weight: 100;
+        padding-top: 3rem;
+        font-family: popRegular;
+      }
+      p {
+        padding: 1rem 0rem;
+        font-family: popLight;
+        font-size: 1.8rem;
+        width: 50%;
+        margin: 0 auto;
+      }
+      input {
+        width: 70%;
+        margin: 2rem auto;
+        display: block;
+        background-color: $color__blackish;
+        padding: 1.6rem;
+        border: transparent;
+      }
+      ::placeholder {
+        color: $color__grey;
+        font-family: popLight;
+        font-size: 1.8rem;
+      }
+    }
+  }
+}
+
+/*
+  **********************
+  *********************+************* MEDIA 
+  *****************************************************+
+  ***********************************************************************
+*/
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px),
+  only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2),
+  only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2),
+  only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2),
+  only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2),
+  only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3),
+  only screen and (min-device-width: 414px) and (max-device-height: 896px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3),
+  only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2),
+  only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3),
+  only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3) {
+  .welcome {
+    @include full-width-height;
+    &__inside {
+      display: block;
+      &--right {
+        h2 {
+          color: $color__grey;
+          font-size: 3rem;
+          font-family: popRegular;
+        }
+        h3 {
+          font-size: 2rem;
+          color: $color__gold;
+        }
+        h1 {
+          font-size: 4rem;
+          font-weight: 100;
+        }
+        p {
+          color: #9b9b9b;
+          font-family: popRegular;
+          font-size: 1.8rem;
+          width: 100%;
+        }
+      }
+      &--left {
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .container__welcome {
+    @include container;
+  }
+  //innovation
+  .innovation {
+    height: 60vh;
+    &__inside {
+      height: 60vh;
+      @include flex-column-center;
+      text-align: center;
+      p {
+        width: 100%;
+      }
+    }
+  }
+  //chefs
+  .chefs {
+    padding: 5rem 0rem;
+    &__inside {
+      &--top {
+        h2 {
+          font-size: 1.6rem;
+        }
+        h3 {
+          padding-bottom: 1rem;
+        }
+        h1 {
+          font-size: 3rem;
+          font-weight: 100;
+          padding: 1rem 0rem;
+        }
+        p {
+          font-size: 1.5rem;
+        }
+      }
+      .before__card {
+        display: block;
+        width: 100%;
+        padding: 5rem 0rem;
+      }
+      .card {
+        margin: 3rem 0rem;
+      }
+    }
+  }
+  //CONTACT
+  .contact {
+    height: 130vh;
+    padding: 2rem 0rem;
+    &__inside {
+      display: block;
+      &--left,
+      &--right {
+        background-color: #1f1f1f;
+        width: 90%;
+        margin: 0 auto;
+      }
+      &--left {
+        h1 {
+          font-size: 3rem;
+          padding: 1rem 0rem;
+        }
+        h2 {
+          font-size: 1.2rem;
+          padding-top: 1rem;
+        }
+        h3 {
+          font-size: 1.4rem;
+        }
+        h4 {
+          padding: 1rem 0rem;
+        }
+      }
+      &--right {
+        margin-top: 1rem;
+        h1 {
+          font-size: 2rem;
+          font-weight: 100;
+          padding-top: 1rem;
+        }
+        p {
+          padding: 1rem 0rem;
+          font-size: 1.5rem;
+        }
+        input {
+          width: 70%;
+          margin: 2rem auto;
+          padding: 1.3rem;
+        }
+        ::placeholder {
+          font-size: 1.4rem;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .welcome {
+    @include full-width-height;
+    &__inside {
+      display: block;
+      &--right {
+        h2 {
+          color: $color__grey;
+          font-size: 3rem;
+          font-family: popRegular;
+        }
+        h3 {
+          font-size: 2rem;
+          color: $color__gold;
+        }
+        h1 {
+          font-size: 4rem;
+          font-weight: 100;
+        }
+        p {
+          color: #9b9b9b;
+          font-family: popRegular;
+          font-size: 1.8rem;
+          width: 100%;
+        }
+      }
+      &--left {
+        img {
+          width: 80%;
+        }
+      }
+    }
+  }
+  .container__welcome {
+    @include container;
+  }
+  .innovation {
+    height: 60vh;
+    &__inside {
+      height: 60vh;
+      @include flex-column-center;
+      text-align: center;
+      p {
+        width: 100%;
+      }
+    }
+  }
+  //chefs
+  .chefs {
+    padding: 5rem 0rem;
+    &__inside {
+      &--top {
+        h2 {
+          font-size: 1.6rem;
+        }
+        h3 {
+          padding-bottom: 1rem;
+        }
+        h1 {
+          font-size: 3rem;
+          font-weight: 100;
+          padding: 1rem 0rem;
+        }
+        p {
+          font-size: 1.5rem;
+        }
+      }
+      .before__card {
+        display: block;
+        width: 100%;
+        padding: 5rem 0rem;
+      }
+      .card {
+        margin: 3rem 0rem;
+      }
+    }
+  }
+  //contact
+  .contact {
+    height: 120vh;
+    width: 100%;
+    padding: 3rem 0rem;
+    &__inside {
+      display: block;
+      &--left,
+      &--right {
+        background-color: #1f1f1f;
+        width: 90%;
+        margin: 0 auto;
+      }
+      &--right {
+        margin-top: 4rem;
+      }
+    }
+  }
+}
+
+//Exceptions for the screen CONTACT SECTIOn
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) {
+  .contact {
+    height: 170vh;
+  }
+}
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) {
+  .contact {
+    height: 180vh;
+  }
+}
+@media only screen and (min-width: 360px) and (max-width: 767px) {
+  .contact {
+    height: 140vh;
+  }
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+  .contact {
+    height: 160vh;
+  }
+}

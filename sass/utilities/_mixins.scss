@@ -1,0 +1,81 @@
+//Container
+@mixin container {
+  width: 95%;
+  margin: 0 auto;
+}
+@mixin container__chefs {
+  width: 80%;
+  margin: 0 auto;
+}
+@mixin container__welcome {
+  width: 70%;
+  margin: 0 auto;
+}
+@mixin containerSmall {
+  width: 90%;
+  margin: 0 auto;
+}
+@mixin full-width-height {
+  width: 100%;
+  height: 100%;
+}
+@mixin full-width-height-vh {
+  width: 100%;
+  height: 120vh;
+}
+@mixin full-width-height-vh-100 {
+  width: 100%;
+  height: 100vh;
+}
+//flex container center
+@mixin flex-row-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+@mixin flex-column-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@mixin flex-row-space {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+@mixin flex-center {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+//grid
+@mixin grid {
+  display: grid;
+  grid-template-columns: repeat(3, 30%);
+  justify-content: space-between;
+}
+@mixin grid-2fr {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+@mixin grid-1fr {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+//Image background
+@mixin bg-cover {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+// position absoulte
+@mixin position-absolute {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}

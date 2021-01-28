@@ -1,0 +1,180 @@
+.shop {
+  @include full-width-height;
+  background-color: $color__light;
+  //Inside
+  &__inside {
+    @include grid-2fr;
+    grid-gap: 5rem;
+    padding: 7rem 0rem;
+    //LEFT SIDE
+    &--left {
+      @include grid-1fr;
+      grid-gap: 5rem;
+      width: 100%;
+      //LEFT COLUMN
+      &-l {
+        &-card {
+          margin-bottom: 5rem;
+          img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            margin-bottom: -4px;
+          }
+          h1 {
+            font-family: popRegular;
+            font-size: 1.8rem;
+            padding: 0.2rem 0rem;
+          }
+          ul {
+            display: flex;
+            padding: 0.3rem 0rem;
+            li {
+              a {
+                font-size: 1.8rem;
+                i {
+                  color: $color_blue;
+                }
+              }
+            }
+          }
+          p {
+            font-size: 1.8rem;
+            padding: 0.3rem;
+            color: $color__gold;
+          }
+        }
+      }
+    }
+    &--right {
+      background-color: $color__white;
+      display: grid;
+      grid-template-rows: 1fr;
+      align-self: flex-start;
+      padding: 5rem;
+      &--column {
+        margin: 2rem 0rem;
+        h1 {
+          font-family: popRegular;
+          font-size: 2.2rem;
+          margin: 1rem 0rem;
+        }
+        ul {
+          li {
+            a {
+              color: $color__gray__innovation;
+              font-size: 1.8rem;
+              font-family: popLight;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.container__chefs {
+  @include container__chefs;
+}
+.overlay {
+  position: relative;
+  &__icon {
+    @include position-absolute;
+    @include flex-center;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+    i {
+      color: $color__white;
+      font-size: 4rem;
+    }
+  }
+}
+.overlay__icon:hover {
+  opacity: 1;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px),
+  only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2),
+  only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2),
+  only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2),
+  only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2),
+  only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3),
+  only screen and (min-device-width: 414px) and (max-device-height: 896px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3),
+  only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2),
+  only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3),
+  only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3) {
+  .shop {
+    &__inside {
+      display: block;
+      padding: 5rem 0rem;
+      //LEFT SIDE
+      &--left {
+        display: block;
+        text-align: center;
+        &-l {
+          &-card {
+            margin-bottom: 3rem;
+            ul {
+              @include flex-row-center;
+              justify-content: center;
+            }
+          }
+        }
+      }
+      &--right {
+        &--column {
+          margin: 2rem 0rem;
+          h1 {
+            font-size: 1.8rem;
+          }
+          ul {
+            li {
+              a {
+                font-size: 1.6rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .shop {
+    &__inside {
+      display: block;
+      padding: 5rem 0rem;
+      //LEFT SIDE
+      &--left {
+        display: block;
+        text-align: center;
+        &-l {
+          &-card {
+            margin-bottom: 3rem;
+            ul {
+              @include flex-row-center;
+              justify-content: center;
+            }
+          }
+        }
+      }
+      &--right {
+        text-align: center;
+        &--column {
+          margin: 2rem 0rem;
+          h1 {
+            font-size: 1.8rem;
+          }
+          ul {
+            li {
+              a {
+                font-size: 1.6rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

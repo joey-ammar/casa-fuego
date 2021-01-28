@@ -1,0 +1,73 @@
+.blog {
+  @include full-width-height;
+  background-color: $color__light;
+  padding: 10rem 0rem;
+  &__inside {
+    &--card {
+      display: grid;
+      grid-template-columns: repeat(3, 30%);
+      justify-content: space-between;
+      &__single {
+        img {
+          width: 100%;
+          margin-bottom: -4px;
+        }
+
+        h1 {
+          font-family: popRegular;
+        }
+        small {
+          display: inline-block;
+          color: $color__gold;
+          font-family: popMedium;
+          font-size: 1.5rem;
+          padding: 0.5rem 0rem;
+        }
+        p {
+          font-family: popLight;
+          font-size: 1.6rem;
+          color: $color__gray__innovation;
+        }
+      }
+    }
+  }
+}
+.cardInfo {
+  background-color: $color__white;
+  padding: 3rem;
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px),
+  only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2),
+  only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2),
+  only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2),
+  only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2),
+  only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3),
+  only screen and (min-device-width: 414px) and (max-device-height: 896px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3),
+  only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2),
+  only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3),
+  only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3) {
+  .blog {
+    padding: 10rem 0rem;
+    &__inside {
+      &--card {
+        display: block;
+        &__single {
+          margin: 2rem 0rem;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .blog {
+    padding: 10rem 0rem;
+    &__inside {
+      &--card {
+        display: block;
+        &__single {
+          margin: 2rem 0rem;
+        }
+      }
+    }
+  }
+}

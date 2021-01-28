@@ -1,0 +1,107 @@
+.footer {
+  @include full-width-height;
+  background-color: $color_bg_contact;
+  &__inside {
+    @include flex-row-space;
+    color: $color__footer;
+    padding: 2rem 0rem;
+    &--left {
+      font-family: popRegular;
+      font-size: 1rem;
+    }
+    &--right {
+      ul {
+        display: flex;
+        li {
+          margin-left: 2rem;
+          a {
+            color: $color__footer;
+            i {
+              font-size: 3rem;
+              color: $color__footer;
+            }
+          }
+        }
+      }
+    }
+  }
+  .container__footer {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .name {
+    font-family: popBold;
+    color: $color__footer;
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px),
+  only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2),
+  only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2),
+  only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2),
+  only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2),
+  only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3),
+  only screen and (min-device-width: 414px) and (max-device-height: 896px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3),
+  only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2),
+  only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3),
+  only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3) {
+  .footer {
+    text-align: center;
+    &__inside {
+      @include flex-column-center;
+
+      padding: 2rem 0rem;
+      &--left {
+        font-family: popRegular;
+        font-size: 1rem;
+      }
+      &--right {
+        margin: 1rem 0rem;
+        ul {
+          display: flex;
+          li {
+            a {
+              i {
+                font-size: 2rem;
+              }
+            }
+          }
+        }
+      }
+    }
+    .container__footer {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .footer {
+    text-align: center;
+    &__inside {
+      @include flex-column-center;
+
+      padding: 2rem 0rem;
+      &--left {
+        font-family: popRegular;
+        font-size: 1rem;
+      }
+      &--right {
+        margin: 1rem 0rem;
+        ul {
+          display: flex;
+          li {
+            a {
+              i {
+                font-size: 2rem;
+              }
+            }
+          }
+        }
+      }
+    }
+    .container__footer {
+      width: 100%;
+    }
+  }
+}
