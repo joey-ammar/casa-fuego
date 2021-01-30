@@ -1,5 +1,9 @@
-# casa-fuego
+Project Title : Project Cashflow
 
-https://casa-fuego.vercel.app
+Technologies used : 1 - HTML 2 - CSS 3 - JAVASCRIPT 4 - SASS
 
-Website live
+Project live: https://casa-fuego.vercel.app
+
+Description: Food theme , Design , Front-end.
+
+More in depth: - Focusing more on Design.
